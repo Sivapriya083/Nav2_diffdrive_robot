@@ -44,14 +44,14 @@ Source the Workspace
     ros2 launch tortoisebot_gazebo custom_world.launch.py
 ```
 
-#Terminal 2 :- launch rviz2
+# Terminal 2 :- launch rviz2
 ```rviz2 ```
 
-#  Terminal3: 
+#  Terminal 3: 
      ```ros2 run teleop_twist_keyboard teleop_twist_keyboard```
 
      
-#  Terminal4: 
+#  Terminal 4: 
      ```ros2 launch slam_toolbox online_async_launch.py   slam_params_file:=/home/sivapriya-arz-i012/task6/tortoisebot_ws/src/tortoisebot_localization/config/mapper_params_online_async.yaml   use_sim_time:=true```
 
      
