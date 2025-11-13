@@ -28,7 +28,7 @@ Installation & Setup
 Create Workspace and Clone Repository
 
         mkdir -p my_ws/src && cd my_ws/src
-        git clone https://github.com/sivapriya083/3D-mapping.git 
+        git clone https://github.com/sivapriya083/Autonomous_navigation.git 
 
 Build the workspace
 ```
