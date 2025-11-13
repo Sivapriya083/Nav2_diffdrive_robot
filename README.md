@@ -1,2 +1,92 @@
 # Nav2_diffdrive_robot
 Implementing Autonomous Navigation Using Nav2 and Rviz2
+
+
+This project demonstrates implementation of a differential drive robot simulation using Nav2 and rviz2.
+
+System Requirements
+
+Ubuntu: 22.04 LTS
+ROS 2: Jazzy Jalisco
+Gazebo: Harmonic
+
+Usage Prerequisites
+
+Install required ROS 2 packages:
+```
+ sudo apt install ros-jazzy-robot-state-publisher \
+                 ros-jazzy-joint-state-publisher \
+                 ros-jazzy-xacro \
+                 ros-jazzy-teleop-twist-keyboard \
+                 ros-jazzy-ros-gz-sim \
+                 ros-jazzy-ros-gz-bridge \
+                 ros-jazzy-sensor-msgs \
+                 ros-jazzy-rviz2
+```
+Installation & Setup
+
+Create Workspace and Clone Repository
+
+        mkdir -p my_ws/src && cd my_ws/src
+        git clone https://github.com/sivapriya083/3D-mapping.git 
+
+Build the workspace
+```
+   cd .. colcon build
+```
+Source the Workspace
+```
+   source install/setup.bash
+```
+
+# Terminal 1 :- Launch Robot in Gazebo
+```
+    ros2 launch tortoisebot_gazebo custom_world.launch.py
+```
+
+#Terminal 2 :- launch rviz2
+```rviz2 ```
+
+#  Terminal3: 
+     ```ros2 run teleop_twist_keyboard teleop_twist_keyboard```
+
+     
+#  Terminal4: 
+     ```ros2 launch slam_toolbox online_async_launch.py   slam_params_file:=/home/sivapriya-arz-i012/task6/tortoisebot_ws/src/tortoisebot_localization/config/mapper_params_online_async.yaml   use_sim_time:=true```
+
+     
+#  Terminal 5: 
+    ```ros2 run twist_mux twist_mux   --ros-args   --params-file /home/sivapriya-arz-i012/task6/tortoisebot_ws/src/tortoisebot_localization/config/twist_mux.yaml   -r cmd_vel_out:=diff_cont/cmd_vel_unstamped```
+    
+#  Terminal 6: 
+    ``ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
