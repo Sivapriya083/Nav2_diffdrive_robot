@@ -68,7 +68,7 @@ Source the Workspace
 twist_mux is a ROS package that combines multiple geometry_msgs::Twist (velocity) commands into a single output topic, allowing for prioritized control of a robot from different sources like a joystick, keyboard, or autonomous navigation system. It works by selecting the highest priority command that is not locked or timed out, which enables features like an emergency stop taking precedence over a joystick, and autonomous navigation resuming when the manual control is released.
 
 
-# refernce :- Articulated Robotics
+reference :- Articulated Robotics
 
 
 
