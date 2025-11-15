@@ -4,7 +4,7 @@ Implementing Autonomous Navigation Using Nav2 and Rviz2
 
 This project demonstrates implementation of a differential drive robot simulation using Nav2 and rviz2.
 
-System Requirements
+# System Requirements
 
 Ubuntu: 22.04 LTS
 ROS 2: Jazzy Jalisco
