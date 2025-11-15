@@ -1,6 +1,4 @@
 # Nav2_diffdrive_robot
-Implementing Autonomous Navigation Using Nav2 and Rviz2
-
 
 This project demonstrates implementation of a differential drive robot simulation using Nav2 and rviz2.
 
